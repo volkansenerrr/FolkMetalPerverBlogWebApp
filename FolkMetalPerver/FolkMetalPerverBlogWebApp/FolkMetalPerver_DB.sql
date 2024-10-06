@@ -81,6 +81,4 @@ CREATE TABLE Yorumlar
   CONSTRAINT FK_Yorum_Uye FOREIGN KEY (UyeID) REFERENCES Uyeler (ID)
 )
 
-INSERT INTO Makaleler (KategoriID, YazarID, Baslik, Icerik, EklemeTarihi, GoruntulemeSayisi, KapakResim, Durum) 
-VALUES 
-(24, 1, 'Viking Metal: Müzik ve Mitolojinin Büyülü Buluþmasý', 'Viking Metal, folk metal alt türü olarak bilinen bir müzik tarzýdýr...', GETDATE(), 0, 'kapak_resmi_yolu.png', 1);
+
