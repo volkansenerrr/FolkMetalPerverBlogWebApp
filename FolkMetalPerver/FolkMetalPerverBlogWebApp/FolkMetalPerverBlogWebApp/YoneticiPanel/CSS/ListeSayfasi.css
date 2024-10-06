@@ -1,0 +1,80 @@
+﻿.sayfaBaslik {
+    padding: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid silver;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.tabloTasiyici {
+    margin: 15px auto; /* Üst ve alt boşluklar ekleyin */
+    width: 100%;
+    max-width: 1289px; /* Maksimum genişlik belirleyin */
+    display: block; /* Flex kullanmak istemiyorsanız bu şekilde ayarlayın */
+    margin-left: 10px;
+}
+
+.tablo {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .tablo tr th {
+        background-color: #e9e9e9;
+        padding: 10px;
+        text-align: left;
+        border: 1px solid silver;
+    }
+
+    .tablo tr td {
+        border: 1px solid silver;
+        padding: 15px; /* Yeterli boşluk eklemek için arttırdık */
+        text-align: center; /* Butonları ortala */
+        vertical-align: middle; /* İçerikleri ortala */
+    }
+
+/* Butonları yan yana dizmek için */
+.tablobutton {
+    display: inline-flex; /* Butonları yan yana dizmek için inline-flex kullanıyoruz */
+    align-items: center; /* Dikey ortalama */
+    justify-content: center; /* Yatay ortalama */
+    padding: 5px; /* Buton içindeki boşluk */
+    font-size: 9pt; /* Font boyutu */
+    border-radius: 3px; /* Kenar yuvarlama */
+    text-decoration: none; /* Alt çizgi olmaması için */
+    margin: 0 5px; /* Butonlar arasında daha fazla boşluk ekle, sağ ve sol 20px boşluk */
+    width: 50px; /* Buton genişliğini ayarlayın */
+    height: 30px; /* Buton yüksekliğini ayarlayın */
+    color: white; /* Yazı rengi */
+}
+
+/* Renkli butonlar */
+.duzenle {
+    background-color: #0092ff; /* Mavi arka plan */
+}
+
+.durum {
+    background-color: #ffd800; /* Sarı arka plan */
+}
+
+.sil {
+    background-color: #ff0000; /* Kırmızı arka plan */
+}
+
+/* Butonların üzerine gelindiğinde görünümünü değiştir */
+.tablobutton:hover {
+    opacity: 0.8; /* Transparanlık ile etki */
+}
+
+/* İkon ayarları */
+.tablobutton img {
+    width: 20px; /* İkonun genişliği */
+    height: auto; /* Yükseklik otomatik ayar */
+    margin-right: 5px; /* İkon ile metin arasında boşluk bırak */
+    align-self: center; /* İkonu dikey olarak ortala */
+}
+
+/* İkonların tam ortalanmasını sağlamak için */
+.tablobutton {
+    line-height: 30px; /* Buton yüksekliğiyle aynı yaparak, içindeki metin ve ikonun ortalanmasını sağla */
+}

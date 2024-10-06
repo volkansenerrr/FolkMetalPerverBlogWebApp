@@ -1,0 +1,75 @@
+﻿html, body {
+    margin: 0; /* Varsayılan margin kaldır */
+    padding: 0; /* Varsayılan padding kaldır */
+    width: 100%; /* Tam genişlik */
+    height: 100%; /* Tam yükseklik */
+}
+
+.formTasiyici {
+    width: 1255px; /* Genişliği artırdık */
+    min-height: 350px; /* Minimum yükseklik */
+    margin: 0 auto; /* Otomatik kenar boşluğu ile ortalanmasını sağla */
+    padding: 20px; /* İçerik için boşluk ekle */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Hafif gölge ekle */
+}
+
+/* Üst çubuğa daha yakın olması için margin-top'u azaltın */
+.formBaslik {
+    background-color: #ededed;
+    padding: 10px;
+    border: 1px solid silver;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center; /* Başlığı ortala */
+    margin-top: 0; /* Üstten boşluk kaldır */
+}
+
+.formIcerik {
+    padding: 20px;
+    border: 1px solid silver;
+    border-top: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.satir {
+    padding: 10px 0;
+}
+
+.metinKutu {
+    width: 98%; /* Genişlik ayarı */
+    padding: 7px;
+    margin-top: 10px; /* Üstteki kutu ile hizalama */
+    max-height: 200px; /* Maksimum yükseklik ayarı */
+    resize: vertical; /* Kullanıcı yukarı/aşağı boyutlandırabilir */
+    overflow-y: auto; /* Yalnızca dikey taşmayı kontrol et */
+}
+
+.islemButton {
+    padding: 15px 30px;
+    background-color: black;
+    color: white;
+    border-radius: 7px;
+    text-decoration: none;
+}
+
+    .islemButton:hover {
+        background-color: #e4e4e4;
+        color: black;
+    }
+
+.basariliPanel {
+    padding: 10px;
+    background-color: Black;
+    color: White;
+    border-radius: 7px;
+    border: 1px solid Black;
+}
+
+.basarisizPanel {
+    padding: 10px;
+    background-color: Black;
+    color: White;
+    border-radius: 7px;
+    border: 1px solid Black;
+}

@@ -1,0 +1,138 @@
+﻿body {
+    font-family: Calibri;
+    color: #303030;
+    background-color: #0e0d0d;
+}
+
+.tasiyici {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%; /* Daha yukarı taşımak için değer artırıldı */
+    width: 820px;
+    box-shadow: 1px 13px 18px -10px rgba(0,0,0,0.76);
+    -webkit-box-shadow: 1px 13px 18px -10px rgba(0,0,0,0.76);
+    -moz-box-shadow: 1px 13px 18px -10px rgba(0,0,0,0.76);
+}
+
+.sol {
+    background-image: url('../Resimler/Login_Background2.jpg');
+    background-size: cover; /* Resmi alanın tamamını kapsayacak şekilde boyutlandır */
+    background-position: center; /* Resmin ortalanmasını sağla */
+    background-color: white;
+    color: white;
+    padding: 30px;
+    width: 350px;
+    float: left;
+    height: 350px;
+}
+
+.solBaslik {
+    padding-bottom: 2px;
+    text-align: center;
+    font-family: Corbel;
+    font-size: 13pt;
+}
+
+.solBaslik, h3 {
+    padding-top: 18px;
+}
+
+.satir {
+    padding: 10px 0;
+}
+
+.sag {
+    background-image: url('../resimler/Login_Background.jpg');
+    background-size: cover; /* Resmi alanın tamamını kapsayacak şekilde boyutlandır */
+    background-position: center; /* Resmin ortalanmasını sağla */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Metne gölge ekleyerek okunabilirliği arttır */
+    color: white;
+    padding: 30px;
+    width: 350px;
+    float: left;
+    height: 350px;
+    text-align: center;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+.sagbaslik {
+    margin-top: 50px;
+}
+
+.metinKutu {
+    padding: 5px;
+    border-radius: 20px;
+    border: 1px solid #d5d5d5;
+    background-color: #efefef;
+    outline: none;
+    width: 331px;
+}
+
+.satir {
+    padding: 9px 0px;
+}
+
+.unuttum {
+    color: #8eed84; /* Üst öğeden renk alır */
+    text-decoration: none; /* Altı çizgiyi kaldırır */
+    margin-top: 11px; /* Aşağı almak için uygun değeri ayarlayın */
+    display: inline-block; /* Bu, margin-top'un etkili olmasını sağlar */
+}
+
+    .unuttum:hover {
+        color: white;
+    }
+
+.yoneticiGirisButon {
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    background-color: #efefef;
+    background-image: url('../Resimler/Button_Background.jpg');
+    background-size: cover; /* Resmi alanın tamamını kapsayacak şekilde boyutlandır */
+    background-position: center; /* Resmin ortalanmasını sağla */
+    width: 331px;
+    cursor: pointer;
+    color: white;
+    font-size: 14pt;
+    font-weight: bold;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); /* Hafif gölge */
+}
+
+    .yoneticiGirisButon:hover {
+        background-image: url('../resimler/button_background2.jpg');
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Parlaklık etkisi */
+        color: #7eea2b;
+    }
+
+.uyeGirisButon {
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: #efefef;
+    background-image: url('../Resimler/Button_Background.jpg');
+    background-size: cover; /* Resmi alanın tamamını kapsayacak şekilde boyutlandır */
+    background-position: center; /* Resmin ortalanmasını sağla */
+    width: 200px;
+    cursor: pointer;
+    color: white;
+    font-size: 12pt;
+    font-weight: bold;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); /* Hafif gölge */
+}
+
+    .uyeGirisButon:hover {
+        background-image: url('../resimler/button_background2.jpg');
+        color: #7eea2b;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Parlaklık etkisi */
+    }
+
+.panelBasarisiz {
+    background-color: #467d42;
+    color: white;
+    padding: 5px;
+    width: 325px;
+    border: 1px solid #467d42;
+    border-radius: 10px;
+}

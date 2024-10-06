@@ -1,0 +1,74 @@
+﻿.formTasiyici {
+    max-width: 2000px; /* Maksimum genişlik artırıldı */
+    width: 98%; /* Tam genişlik */
+    margin: 1px auto; /* Üstten boşluk, otomatik yan boşluklarla ortalar */
+    padding: 15px; /* Taşıyıcıya iç boşluk ekledik */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+}
+
+.formBaslik {
+    background-color: #ededed;
+    padding: 10px;
+    border: 1px solid silver;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center; /* Başlığı ortalamak için eklendi */
+}
+
+.formIcerik {
+    padding: 20px;
+    border: 1px solid silver;
+    border-top: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.satir {
+    padding: 10px 0;
+}
+
+.metinKutu {
+    width: 98%;
+    padding: 7px;
+    box-sizing: border-box; /* İç boşluk ve kenar boşluğu dahil edilir */
+}
+
+.bolunmusmetinKutu {
+    width: 640px;
+    padding: 7px;
+}
+
+.islemButton {
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    border-radius: 7px;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Geçiş efekti eklendi */
+}
+
+    .islemButton:hover {
+        background-color: #efefef;
+        color: black;
+    }
+
+.basariliPanel {
+    padding: 10px;
+    background-color: Black;
+    color: White;
+    border-radius: 7px;
+    border: 1px solid Black;
+}
+
+.basarisizPanel {
+    padding: 10px;
+    background-color: Black;
+    color: white;
+    border-radius: 7px;
+    border: 1px solid Black;
+}
+
+/* Checkbox için boşluk ekleme */
+#cb_yayinla {
+    margin-right: 10px; /* Checkbox ile metin arasına boşluk ekledik */
+}

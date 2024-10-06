@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="YoneticiMaster.Master.cs" Inherits="FolkMetalPerverBlogWebApp.YoneticiPanel.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Folk Metalperver Blog - Yönetim Paneli</title>
+    <link href="css/YoneticiStil.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="ustcubuk">
+            <div class="anaBaslik">
+                <img src="Resimler/Ust_Cubuk_Logo.jpg" alt="Blog Logo" class="logo" />
+            </div>
+            <div class="kullaniciAlani">
+                <img class="profilFoto" src="Resimler/Fotoğrafım.jpg" alt="Profil Fotoğrafı" />
+                <div class="kullaniciBilgisi">
+                    <asp:Label ID="lbl_kullanici" runat="server" CssClass="kullanicieleman">Kullanıcı Adı(Yetki)</asp:Label>
+                    <asp:LinkButton ID="lbtn_cikis" runat="server" CssClass="cikisLink" OnClick="lbtn_cikis_Click">
+                        <img src="Resimler/exit.png" alt="Çıkış" />
+                    </asp:LinkButton>
+                </div>
+            </div>
+        </div>
+        <div style="clear: both"></div>
+
+        <div>
+            <div class="anaMenu">
+                <a href="YoneticiDefault.aspx">Anasayfa</a>
+                <div class="cizgi"></div>
+                <a href="KategoriEkle.aspx">Kategori Ekle</a>
+                <a href="KategoriListele.aspx">Kategori Listele</a>
+                <div class="cizgi"></div>
+                <a href="MakaleEkle.aspx">Makale Ekle</a>
+                <a href="MakaleListele.aspx">Makale Listele</a>
+                <div class="cizgi"></div>
+                <a href="YoneticiDefault.aspx">Üyeler</a>
+                <a href="YoneticiDefault.aspx">Yorumlar</a>
+                <div class="cizgi"></div>
+                <a href="YoneticiDefault.aspxs">Yazar/Yönetici</a>
+            </div>
+            <div class="anaIcerik">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
