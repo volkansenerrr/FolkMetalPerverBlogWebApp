@@ -1,0 +1,76 @@
+﻿/* Form Taşıyıcı */
+.formTasiyici {
+    max-width: 2000px; /* Maksimum genişlik */
+    width: 98%; /* Neredeyse tam genişlik */
+    margin: 1px auto; /* Üstten boşluk, otomatik yan boşluklarla ortala */
+    padding: 15px; /* Taşıyıcıya iç boşluk ekledik */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+}
+
+/* Form Başlık */
+.formBaslik {
+    background-color: #ededed;
+    padding: 10px;
+    border: 1px solid silver;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center; /* Başlığı ortalamak için */
+}
+
+/* Form İçerik */
+.formIcerik {
+    padding: 20px;
+    border: 1px solid silver;
+    border-top: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Satır Stil */
+.satir {
+    padding: 10px 0; /* Dikey boşluk ekleyebilirsin, istersen kaldırabilirsin */
+    width: 100%; /* Tüm genişliği kaplar */
+}
+
+/* Giriş Alanları */
+.metinKutu,
+.bolunmusmetinKutu {
+    width: 100%; /* Genişlik tam */
+    padding: 7px; /* İç boşluk ekle */
+    box-sizing: border-box; /* İç boşluk ve kenar boşluğu dahil edilir */
+    margin: 0; /* Aralarındaki boşluğu kaldır */
+}
+
+/* İşlem Butonu */
+.islemButton {
+    padding: 10px 30px; /* Dikey ve yatay boşluk */
+    background-color: black;
+    color: white;
+    border-radius: 7px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    width: auto; /* Butonun genişliğini ayarla */
+    display: inline-block; /* Blok halinde görünüm */
+    text-align: center; /* Metni ortala */
+    margin-top: 10px; /* Üstte biraz boşluk */
+}
+
+    .islemButton:hover {
+        background-color: #efefef; /* Hover efekti */
+        color: black;
+    }
+
+/* CKEditor Genişlik */
+.ck-editor__editable {
+    width: 100% !important; /* CKEditor genişliği tam sayfa */
+}
+
+/* Resim ve Dosya Yükleme */
+#fu_resim {
+    width: 100%; /* Tam genişlik */
+}
+
+/* Genişlikleri artırmak için */
+.makaleBaslik, .makaleKategorisi, .makaleOzet, .makaleIcerik {
+    width: 680px; /* İstenilen genişlik */
+}

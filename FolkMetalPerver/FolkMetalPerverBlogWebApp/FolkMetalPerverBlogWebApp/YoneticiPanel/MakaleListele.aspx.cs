@@ -12,24 +12,38 @@ namespace FolkMetalPerverBlogWebApp.YoneticiPanel
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
             if (!IsPostBack) // Eğer sayfa ilk kez yükleniyorsa
             {
-                lv_Makaleler.DataSource = vm.MakaleListele();
-                lv_Makaleler.DataBind();
+                try
+                {
+                    lv_Makaleler.DataSource = vm.MakaleListele();
+                    lv_Makaleler.DataBind();
+                }
+                catch (Exception ex)
+                {
+                    // Hata mesajını göster (Debugging için)
+                    Response.Write($"Hata: {ex.Message}");
+                }
             }
         }
 
-        
         protected void lv_Makaleler_ItemCommand(object sender, ListViewCommandEventArgs e)
         {
             int makid = Convert.ToInt32(e.CommandArgument);
             if (e.CommandName == "sil")
             {
-                vm.MakaleSil(makid);
+                try
+                {
+                    vm.MakaleSil(makid);
+                    lv_Makaleler.DataSource = vm.MakaleListele(); // Listeyi güncelle
+                    lv_Makaleler.DataBind();
+                }
+                catch (Exception ex)
+                {
+                    // Hata mesajını göster
+                    Response.Write($"Hata: {ex.Message}");
+                }
             }
-            lv_Makaleler.DataSource = vm.MakaleListele();
-            lv_Makaleler.DataBind();
         }
     }
 }

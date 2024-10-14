@@ -26,7 +26,7 @@
                 <asp:TextBox ID="tb_baslik" runat="server" CssClass="metinKutu"></asp:TextBox>
             </div>
             <div class="satir">
-                <label for="ddl_kategoriler">Makale Kategorisi Seç</label><br />
+                <label for="ddl_kategoriler">Makale Kategorisi</label><br />
                 <asp:DropDownList ID="ddl_kategoriler" runat="server" CssClass="metinKutu"></asp:DropDownList>
             </div>
             <div class="satir">

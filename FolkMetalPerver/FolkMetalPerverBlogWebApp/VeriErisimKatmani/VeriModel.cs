@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Diagnostics;
 using System.Linq;
@@ -22,6 +23,7 @@ namespace VeriErisimKatmani
 
         public Yonetici YoneticiGiris(string mail, string sifre)
         {
+            SqlCommand komut = baglanti.CreateCommand();
             try
             {
                 komut.CommandText = "SELECT COUNT(*) FROM Yoneticiler WHERE Mail = @mail AND Sifre = @sifre";
@@ -59,9 +61,70 @@ namespace VeriErisimKatmani
                     return null;
                 }
             }
-            catch
+            catch (Exception ex)
             {
+                Console.WriteLine("Hata: " + ex.Message);
                 return null;
+            }
+            finally
+            {
+                baglanti.Close();
+            }
+        }
+
+        public Yonetici YoneticiEmailveSifreGetir(string email, string sifre)
+        {
+            SqlCommand komut = new SqlCommand("SELECT * FROM Yoneticiler WHERE Mail = @mail AND Sifre = @sifre", baglanti);
+            komut.Parameters.AddWithValue("@mail", email);
+            komut.Parameters.AddWithValue("@sifre", sifre);
+
+            try
+            {
+                baglanti.Open();
+                SqlDataReader okuyucu = komut.ExecuteReader();
+
+                if (okuyucu.Read())
+                {
+                    return new Yonetici
+                    {
+                        ID = (int)okuyucu["ID"],
+                        Isim = (string)okuyucu["Isim"],
+                        Soyisim = (string)okuyucu["Soyisim"],
+                        KullaniciAdi = (string)okuyucu["KullaniciAdi"],
+                        Mail = (string)okuyucu["Mail"],
+                        Sifre = (string)okuyucu["Sifre"],
+                        Durum = (bool)okuyucu["Durum"],
+                        Silinmis = (bool)okuyucu["Silinmis"]
+                    };
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Hata: " + ex.Message);
+            }
+            finally
+            {
+                baglanti.Close();
+            }
+            return null; // Kullanıcı bulunamazsa null döndür
+        }
+
+        public bool YoneticiSifreGuncelle(string email, string yeniSifre)
+        {
+            SqlCommand komut = new SqlCommand("UPDATE Yoneticiler SET Sifre = @yeniSifre WHERE Mail = @mail", baglanti);
+            komut.Parameters.AddWithValue("@mail", email);
+            komut.Parameters.AddWithValue("@yeniSifre", yeniSifre);
+
+            try
+            {
+                baglanti.Open();
+                int sonuc = komut.ExecuteNonQuery();
+                return sonuc > 0; // Güncelleme başarılıysa true döndür
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Hata: " + ex.Message);
+                return false;
             }
             finally
             {
@@ -358,9 +421,6 @@ namespace VeriErisimKatmani
             }
         }
 
-
-
-
         public List<Makale> MakaleListele()
         {
             List<Makale> makaleler = new List<Makale>();
@@ -371,6 +431,7 @@ namespace VeriErisimKatmani
 
                 baglanti.Open();
                 SqlDataReader okuyucu = komut.ExecuteReader();
+
                 while (okuyucu.Read())
                 {
                     Makale mak = new Makale();
@@ -388,16 +449,22 @@ namespace VeriErisimKatmani
                     mak.Durum = okuyucu.GetBoolean(11);
                     makaleler.Add(mak);
                 }
-                return makaleler;
             }
-            catch
+            catch (Exception ex)
             {
-                return null;
+                // Hata günlüğü veya loglama yap
+                // Örneğin: LogHata(ex);
+                throw new Exception("Veritabanından makaleleri yüklerken bir hata oluştu.", ex);
             }
             finally
             {
-                baglanti.Close();
+                if (baglanti.State == ConnectionState.Open)
+                {
+                    baglanti.Close();
+                }
             }
+
+            return makaleler;
         }
 
         public List<Makale> MakaleListele(int kid)
@@ -545,7 +612,10 @@ namespace VeriErisimKatmani
                 baglanti.Close();
             }
         }
-
-        #endregion
     }
 }
+
+    
+
+    #endregion
+

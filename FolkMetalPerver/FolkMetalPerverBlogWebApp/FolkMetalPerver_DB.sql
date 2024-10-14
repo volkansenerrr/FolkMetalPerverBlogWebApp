@@ -27,7 +27,7 @@ CREATE TABLE Yoneticiler
   CONSTRAINT FK_Yonetici_YoneticiTur FOREIGN KEY (YoneticiTurID) REFERENCES YoneticiTurleri (ID) 
 )
 GO
-INSERT INTO Yoneticiler(YoneticiTurID, Isim, Soyisim, KullaniciAdi, Mail, Sifre, Durum, Silinmis) VALUES (1, 'Volkan', 'Þener', 'YaþlýGenç', 'volkanvssener@hotmail.com', 'Volkitolki123/*-', 1, 0)
+INSERT INTO Yoneticiler(YoneticiTurID, Isim, Soyisim, KullaniciAdi, Mail, Sifre, Durum, Silinmis) VALUES (1, 'Volkan', 'Þener', 'YaþlýGenç', 'volkanvssener@hotmail.com', '1234', 1, 0)
 GO
 CREATE TABLE Kategoriler 
 (
@@ -45,6 +45,7 @@ CREATE TABLE Makaleler
   KategoriID INT,
   YazarID INT,
   Baslik NVARCHAR (250),
+  Ozet NVARCHAR (500),
   Icerik NVARCHAR (MAX),
   EklemeTarihi DATETIME,
   GoruntulemeSayisi BIGINT,
@@ -80,5 +81,6 @@ CREATE TABLE Yorumlar
   CONSTRAINT FK_Yorum_Makale FOREIGN KEY (MakaleID) REFERENCES Makaleler (ID),
   CONSTRAINT FK_Yorum_Uye FOREIGN KEY (UyeID) REFERENCES Uyeler (ID)
 )
+
 
 

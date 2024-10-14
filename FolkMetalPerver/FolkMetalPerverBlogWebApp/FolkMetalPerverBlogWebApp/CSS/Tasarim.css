@@ -1,0 +1,93 @@
+﻿*, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Calibri;
+    background-color: #031300
+}
+
+.gecici {
+    min-height: 500px;
+    border: 1px solid silver;
+}
+
+.anaTasiyici {
+    width: 1000px;
+    margin: 0px auto;
+}
+
+.sayfaBaslik {
+    width: 400px;
+    padding: 19px 0;
+    color: #122511;
+    float: left;
+}
+
+.uyePanel {
+    width: 400px;
+    float: right;
+    padding: 20px 0;
+}
+
+    .uyePanel a {
+        text-decoration: none;
+        color: #d2d6d2;
+        float: right;
+        margin-left: 20px;
+        margin-top: 5px;
+    }
+
+        .uyePanel a:hover {
+            color: white;
+        }
+
+.ayrac {
+    border-bottom: 1px solid #ededed;
+}
+
+.menu {
+    padding: 11px 0px;
+    font-size: 12pt;
+    color: white;
+}
+
+    .menu a {
+        padding-right: 11px;
+        padding-left: 5px;
+        color: #d2d6d2;
+        text-decoration: none;
+        font-weight: 900;
+    }
+
+        .menu a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+.makaleAlani {
+    width: 800px;
+    float: left;
+    color: #d6d6d6;
+}
+
+.reklamalani {
+    padding-top: 60px;
+    width: 200px;
+    float: right;
+}
+
+.altbilgi {
+    color: #d6d6d6;
+}
+
+.makale {
+    margin: 20px 0;
+}
+
+.spotify-container {
+    text-align: center; /* Çerçeveyi ortala */
+    margin: 20px 0; /* Üst ve alt boşluk */
+    color: white;
+}

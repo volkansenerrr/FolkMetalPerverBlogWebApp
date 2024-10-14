@@ -31,13 +31,13 @@
                     <td>
                         <div style="display: flex; justify-content: center; gap: 5px;"> <!-- Boşluk ve hizalama -->
                             <a href='KategoriDuzenle.aspx?kategoriId=<%# Eval("ID") %>' class="tablobutton duzenle" style="display: inline-flex; align-items: center; padding: 10px; line-height: 1.5; width: 100px;">
-                                <img src="Resimler/Duzenle_Icon.png" alt="Düzenle" style="margin-right: 5px;" /> Düzenle
+                                <img src="Resimler/Duzenle_Icon.png" alt="Düzenle" style="margin-right: 5px;" /> 
                             </a>
                             <asp:LinkButton ID="lbtn_durum" runat="server" class="tablobutton durum" CommandArgument='<%# Eval("ID") %>' CommandName="durum" style="display: inline-flex; align-items: center; padding: 10px; line-height: 1.5; width: 100px;">
-                                <img src="Resimler/Durum_Icon.png" alt="Durum" style="margin-right: 5px;" /> Durum
+                                <img src="Resimler/Durum_Icon.png" alt="Durum" style="margin-right: 5px;" /> 
                             </asp:LinkButton>
                             <asp:LinkButton ID="lbtn_sil" runat="server" class="tablobutton sil" CommandArgument='<%# Eval("ID") %>' CommandName="sil" style="display: inline-flex; align-items: center; padding: 10px; line-height: 1.5; width: 100px;">
-                                <img src="Resimler/Sil_Icon.png" alt="Sil" style="margin-right: 5px;" /> Sil
+                                <img src="Resimler/Sil_Icon.png" alt="Sil" style="margin-right: 5px;" /> 
                             </asp:LinkButton>
                         </div>
                     </td>

@@ -14,8 +14,8 @@ namespace VeriErisimKatmani
         public int YazarID { get; set; }
         public string Yazar { get; set; }
         public string Baslik { get; set; }
-        public string Icerik { get; set; }
         public string Ozet { get; set; }
+        public string Icerik { get; set; }
         public DateTime EklemeTarihi { get; set; }
         public long GoruntulemeSayisi { get; set; }
         public string KapakResim { get; set; }

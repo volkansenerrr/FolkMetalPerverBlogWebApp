@@ -71,6 +71,11 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CSS\Tasarim.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="MakaleDetay.aspx" />
+    <Content Include="Reklamlar\160x600.gif" />
+    <Content Include="Resimler\Folk_Metalperver.jpg" />
     <Content Include="Resimler\MakaleResimleri\none.png" />
     <Content Include="Web.config" />
     <Content Include="YoneticiPanel\ckeditor\adapters\jquery.js" />
@@ -387,14 +392,18 @@
     <Content Include="YoneticiPanel\CSS\FormSayfasi.css" />
     <Content Include="YoneticiPanel\CSS\GirisStil.css" />
     <Content Include="YoneticiPanel\CSS\ListeSayfasi.css" />
+    <Content Include="YoneticiPanel\CSS\MakaleDuzenle.css" />
     <Content Include="YoneticiPanel\CSS\MakaleFormSayfasi.css" />
+    <Content Include="YoneticiPanel\CSS\YoneticiResetPassword.css" />
     <Content Include="YoneticiPanel\CSS\YoneticiStil.css" />
     <Content Include="YoneticiPanel\Giris.aspx" />
     <Content Include="YoneticiPanel\KategoriDuzenle.aspx" />
     <Content Include="YoneticiPanel\KategoriEkle.aspx" />
     <Content Include="YoneticiPanel\KategoriListele.aspx" />
+    <Content Include="YoneticiPanel\MakaleDuzenle.aspx" />
     <Content Include="YoneticiPanel\MakaleEkle.aspx" />
     <Content Include="YoneticiPanel\MakaleListele.aspx" />
+    <Content Include="YoneticiPanel\YoneticiResetPassword.aspx" />
     <Content Include="YoneticiPanel\Resimler\Button_Background.jpg" />
     <Content Include="YoneticiPanel\Resimler\Button_Background2.jpg" />
     <Content Include="YoneticiPanel\Resimler\Durum_Icon.png" />
@@ -408,6 +417,27 @@
     <Content Include="YoneticiPanel\YoneticiDefault.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MakaleDetay.aspx.cs">
+      <DependentUpon>MakaleDetay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MakaleDetay.aspx.designer.cs">
+      <DependentUpon>MakaleDetay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="YoneticiPanel\Giris.aspx.cs">
       <DependentUpon>Giris.aspx</DependentUpon>
@@ -437,6 +467,13 @@
     <Compile Include="YoneticiPanel\KategoriListele.aspx.designer.cs">
       <DependentUpon>KategoriListele.aspx</DependentUpon>
     </Compile>
+    <Compile Include="YoneticiPanel\MakaleDuzenle.aspx.cs">
+      <DependentUpon>MakaleDuzenle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YoneticiPanel\MakaleDuzenle.aspx.designer.cs">
+      <DependentUpon>MakaleDuzenle.aspx</DependentUpon>
+    </Compile>
     <Compile Include="YoneticiPanel\MakaleEkle.aspx.cs">
       <DependentUpon>MakaleEkle.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -450,6 +487,13 @@
     </Compile>
     <Compile Include="YoneticiPanel\MakaleListele.aspx.designer.cs">
       <DependentUpon>MakaleListele.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YoneticiPanel\YoneticiResetPassword.aspx.cs">
+      <DependentUpon>YoneticiResetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YoneticiPanel\YoneticiResetPassword.aspx.designer.cs">
+      <DependentUpon>YoneticiResetPassword.aspx</DependentUpon>
     </Compile>
     <Compile Include="YoneticiPanel\YoneticiDefault.aspx.cs">
       <DependentUpon>YoneticiDefault.aspx</DependentUpon>
@@ -467,6 +511,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="MasterPage.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

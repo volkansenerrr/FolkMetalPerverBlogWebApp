@@ -75,7 +75,7 @@
                     <asp:Label ID="lbl_mesaj" runat="server">Kullanıcı Bulunamadı</asp:Label>
                 </asp:Panel>
                 <div class="satir">
-                    <a href="#" class="unuttum">Şifremi unuttum?</a>
+                    <a href="YoneticiResetPassword.aspx" class="unuttum">Şifremi unuttum?</a>
                 </div>
             </div>
             <div class="sag">

@@ -7,7 +7,6 @@
         <h3>Makaleler</h3>
     </div>
     <div class="tabloTasiyici">
-     
         <asp:ListView ID="lv_Makaleler" runat="server" OnItemCommand="lv_Makaleler_ItemCommand">
             <LayoutTemplate>
                 <table cellspacing="0" cellpadding="0" class="tablo">
@@ -15,6 +14,7 @@
                         <th>#</th>
                         <th>ID</th>
                         <th>Başlık</th>
+                        <th>Icerik</th>
                         <th>Kategori</th>
                         <th>Yazar</th>
                         <th>Ekleme Tarih</th>
@@ -32,21 +32,21 @@
                     </td>
                     <td><%# Eval("ID") %></td>
                     <td><%# Eval("Baslik") %></td>
+                    <td><%# Eval("Icerik") %></td>
                     <td><%# Eval("Kategori") %></td>
                     <td><%# Eval("Yazar") %></td>
                     <td><%# Eval("EklemeTarihi") %></td>
-                     <td><%# Eval("GoruntulemeSayisi") %></td>
+                    <td><%# Eval("GoruntulemeSayisi") %></td>
                     <td><%# Eval("Durum") %></td>
                     <td>
                         <a href='MakaleDuzenle.aspx?makaleId=<%# Eval("ID") %>' class="tablobutton duzenle">
                             <img src="Resimler/Duzenle_Icon.png"/></a>
-                        <asp:LinkButton ID="lbtn_sil" runat="server" CommandArgument='<%# Eval("ID") %>' CommandName="sil" class="tablobutton sil" >
+                        <asp:LinkButton ID="lbtn_sil" runat="server" CommandArgument='<%# Eval("ID") %>' CommandName="sil" class="tablobutton sil">
                             <img src="Resimler/Sil_Icon.png" />  
                         </asp:LinkButton>
                     </td>
                 </tr>
             </ItemTemplate>
-         
         </asp:ListView>
     </div>
 </asp:Content>

@@ -22,7 +22,7 @@
     .tablo tr th {
         background-color: #e9e9e9;
         padding: 10px;
-        text-align: left;
+        text-align: center;
         border: 1px solid silver;
     }
 
@@ -33,19 +33,20 @@
         vertical-align: middle; /* İçerikleri ortala */
     }
 
-/* Butonları yan yana dizmek için */
+/* Butonları ortalamak için */
 .tablobutton {
-    display: inline-flex; /* Butonları yan yana dizmek için inline-flex kullanıyoruz */
+    display: inline-flex; /* Butonların ortalanmasını sağlamak için inline-flex kullanıyoruz */
     align-items: center; /* Dikey ortalama */
     justify-content: center; /* Yatay ortalama */
-    padding: 5px; /* Buton içindeki boşluk */
+    padding: 0; /* Buton içindeki boşluk */
     font-size: 9pt; /* Font boyutu */
     border-radius: 3px; /* Kenar yuvarlama */
     text-decoration: none; /* Alt çizgi olmaması için */
-    margin: 0 5px; /* Butonlar arasında daha fazla boşluk ekle, sağ ve sol 20px boşluk */
-    width: 50px; /* Buton genişliğini ayarlayın */
+    margin: 5px 0; /* Butonlar arasında yukarı ve aşağıda 5px boşluk ekle */
+    width: 51px; /* Buton genişliğini ayarlayın */
     height: 30px; /* Buton yüksekliğini ayarlayın */
     color: white; /* Yazı rengi */
+    line-height: 30px; /* İkon ve metni dikey olarak ortalamak için */
 }
 
 /* Renkli butonlar */
@@ -68,10 +69,10 @@
 
 /* İkon ayarları */
 .tablobutton img {
-    width: 20px; /* İkonun genişliği */
-    height: auto; /* Yükseklik otomatik ayar */
-    margin-right: 5px; /* İkon ile metin arasında boşluk bırak */
-    align-self: center; /* İkonu dikey olarak ortala */
+    width: 21px; /* İkonun genişliği */
+    height: 21px; /* İkon yüksekliği aynı yapıldı */
+    margin: 0; /* İkon ile metin arasında boşluk kaldırıldı */
+    vertical-align: middle; /* İkonu dikey olarak ortala */
 }
 
 /* İkonların tam ortalanmasını sağlamak için */
