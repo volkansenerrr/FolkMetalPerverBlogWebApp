@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\I-Life\\OneDrive\\Documents\\GitHub\\FolkMetalPerver\\FolkMetalPerver\\FolkMetalPerverBlogWebApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2E3AFAF3-E9EA-4E18-B26A-76696D241ECB}|FolkMetalPerverBlogWebApp\\FolkMetalPerverBlogWebApp.csproj|C:\\Users\\I-Life\\OneDrive\\Documents\\GitHub\\FolkMetalPerver\\FolkMetalPerver\\FolkMetalPerverBlogWebApp\\folkmetalperverblogwebapp\\makaledetay.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{2E3AFAF3-E9EA-4E18-B26A-76696D241ECB}|FolkMetalPerverBlogWebApp\\FolkMetalPerverBlogWebApp.csproj|solutionrelative:folkmetalperverblogwebapp\\makaledetay.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2E3AFAF3-E9EA-4E18-B26A-76696D241ECB}|FolkMetalPerverBlogWebApp\\FolkMetalPerverBlogWebApp.csproj|C:\\Users\\I-Life\\OneDrive\\Documents\\GitHub\\FolkMetalPerver\\FolkMetalPerver\\FolkMetalPerverBlogWebApp\\folkmetalperverblogwebapp\\masterpage.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
       "RelativeMoniker": "D:0:0:{2E3AFAF3-E9EA-4E18-B26A-76696D241ECB}|FolkMetalPerverBlogWebApp\\FolkMetalPerverBlogWebApp.csproj|solutionrelative:folkmetalperverblogwebapp\\masterpage.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E3AFAF3-E9EA-4E18-B26A-76696D241ECB}|FolkMetalPerverBlogWebApp\\FolkMetalPerverBlogWebApp.csproj|C:\\Users\\I-Life\\OneDrive\\Documents\\GitHub\\FolkMetalPerver\\FolkMetalPerver\\FolkMetalPerverBlogWebApp\\folkmetalperverblogwebapp\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{2E3AFAF3-E9EA-4E18-B26A-76696D241ECB}|FolkMetalPerverBlogWebApp\\FolkMetalPerverBlogWebApp.csproj|solutionrelative:folkmetalperverblogwebapp\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2E3AFAF3-E9EA-4E18-B26A-76696D241ECB}|FolkMetalPerverBlogWebApp\\FolkMetalPerverBlogWebApp.csproj|c:\\users\\i-life\\onedrive\\documents\\github\\folkmetalperver\\folkmetalperver\\folkmetalperverblogwebapp\\folkmetalperverblogwebapp\\yoneticipanel\\yoneticimaster.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
@@ -47,16 +55,8 @@
       "RelativeMoniker": "D:0:0:{2E3AFAF3-E9EA-4E18-B26A-76696D241ECB}|FolkMetalPerverBlogWebApp\\FolkMetalPerverBlogWebApp.csproj|solutionrelative:folkmetalperverblogwebapp\\css\\tasarim.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E3AFAF3-E9EA-4E18-B26A-76696D241ECB}|FolkMetalPerverBlogWebApp\\FolkMetalPerverBlogWebApp.csproj|C:\\Users\\I-Life\\OneDrive\\Documents\\GitHub\\FolkMetalPerver\\FolkMetalPerver\\FolkMetalPerverBlogWebApp\\folkmetalperverblogwebapp\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{2E3AFAF3-E9EA-4E18-B26A-76696D241ECB}|FolkMetalPerverBlogWebApp\\FolkMetalPerverBlogWebApp.csproj|solutionrelative:folkmetalperverblogwebapp\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2E3AFAF3-E9EA-4E18-B26A-76696D241ECB}|FolkMetalPerverBlogWebApp\\FolkMetalPerverBlogWebApp.csproj|C:\\Users\\I-Life\\OneDrive\\Documents\\GitHub\\FolkMetalPerver\\FolkMetalPerver\\FolkMetalPerverBlogWebApp\\folkmetalperverblogwebapp\\yoneticipanel\\makaleekle.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{2E3AFAF3-E9EA-4E18-B26A-76696D241ECB}|FolkMetalPerverBlogWebApp\\FolkMetalPerverBlogWebApp.csproj|solutionrelative:folkmetalperverblogwebapp\\yoneticipanel\\makaleekle.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E3AFAF3-E9EA-4E18-B26A-76696D241ECB}|FolkMetalPerverBlogWebApp\\FolkMetalPerverBlogWebApp.csproj|C:\\Users\\I-Life\\OneDrive\\Documents\\GitHub\\FolkMetalPerver\\FolkMetalPerver\\FolkMetalPerverBlogWebApp\\folkmetalperverblogwebapp\\makaledetay.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{2E3AFAF3-E9EA-4E18-B26A-76696D241ECB}|FolkMetalPerverBlogWebApp\\FolkMetalPerverBlogWebApp.csproj|solutionrelative:folkmetalperverblogwebapp\\makaledetay.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2E3AFAF3-E9EA-4E18-B26A-76696D241ECB}|FolkMetalPerverBlogWebApp\\FolkMetalPerverBlogWebApp.csproj|C:\\Users\\I-Life\\OneDrive\\Documents\\GitHub\\FolkMetalPerver\\FolkMetalPerver\\FolkMetalPerverBlogWebApp\\folkmetalperverblogwebapp\\yoneticipanel\\css\\makaleformsayfasi.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -118,11 +118,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 165,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "YoneticiMaster.Master",
               "DocumentMoniker": "C:\\Users\\I-Life\\OneDrive\\Documents\\GitHub\\FolkMetalPerver\\FolkMetalPerver\\FolkMetalPerverBlogWebApp\\FolkMetalPerverBlogWebApp\\YoneticiPanel\\YoneticiMaster.Master",
               "RelativeDocumentMoniker": "FolkMetalPerverBlogWebApp\\YoneticiPanel\\YoneticiMaster.Master",
@@ -135,7 +135,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Kategori.cs",
               "DocumentMoniker": "C:\\Users\\I-Life\\OneDrive\\Documents\\GitHub\\FolkMetalPerver\\FolkMetalPerver\\FolkMetalPerverBlogWebApp\\VeriErisimKatmani\\Kategori.cs",
               "RelativeDocumentMoniker": "VeriErisimKatmani\\Kategori.cs",
@@ -148,7 +148,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "BaglantiYollari.cs",
               "DocumentMoniker": "C:\\Users\\I-Life\\OneDrive\\Documents\\GitHub\\FolkMetalPerver\\FolkMetalPerver\\FolkMetalPerverBlogWebApp\\VeriErisimKatmani\\BaglantiYollari.cs",
               "RelativeDocumentMoniker": "VeriErisimKatmani\\BaglantiYollari.cs",
@@ -161,7 +161,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Yonetici.cs",
               "DocumentMoniker": "C:\\Users\\I-Life\\OneDrive\\Documents\\GitHub\\FolkMetalPerver\\FolkMetalPerver\\FolkMetalPerverBlogWebApp\\VeriErisimKatmani\\Yonetici.cs",
               "RelativeDocumentMoniker": "VeriErisimKatmani\\Yonetici.cs",
@@ -174,7 +174,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Makale.cs",
               "DocumentMoniker": "C:\\Users\\I-Life\\OneDrive\\Documents\\GitHub\\FolkMetalPerver\\FolkMetalPerver\\FolkMetalPerverBlogWebApp\\VeriErisimKatmani\\Makale.cs",
               "RelativeDocumentMoniker": "VeriErisimKatmani\\Makale.cs",
@@ -187,7 +187,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 0,
               "Title": "MakaleDetay.aspx",
               "DocumentMoniker": "C:\\Users\\I-Life\\OneDrive\\Documents\\GitHub\\FolkMetalPerver\\FolkMetalPerver\\FolkMetalPerverBlogWebApp\\FolkMetalPerverBlogWebApp\\MakaleDetay.aspx",
               "RelativeDocumentMoniker": "FolkMetalPerverBlogWebApp\\MakaleDetay.aspx",
@@ -195,11 +195,12 @@
               "RelativeToolTip": "FolkMetalPerverBlogWebApp\\MakaleDetay.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-10-10T23:53:39.137Z"
+              "WhenOpened": "2024-10-10T23:53:39.137Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Default.aspx.cs",
               "DocumentMoniker": "C:\\Users\\I-Life\\OneDrive\\Documents\\GitHub\\FolkMetalPerver\\FolkMetalPerver\\FolkMetalPerverBlogWebApp\\FolkMetalPerverBlogWebApp\\Default.aspx.cs",
               "RelativeDocumentMoniker": "FolkMetalPerverBlogWebApp\\Default.aspx.cs",
@@ -212,7 +213,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 2,
               "Title": "Default.aspx",
               "DocumentMoniker": "C:\\Users\\I-Life\\OneDrive\\Documents\\GitHub\\FolkMetalPerver\\FolkMetalPerver\\FolkMetalPerverBlogWebApp\\FolkMetalPerverBlogWebApp\\Default.aspx",
               "RelativeDocumentMoniker": "FolkMetalPerverBlogWebApp\\Default.aspx",
@@ -220,11 +221,12 @@
               "RelativeToolTip": "FolkMetalPerverBlogWebApp\\Default.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-10-10T23:48:58.717Z"
+              "WhenOpened": "2024-10-10T23:48:58.717Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "Tasarim.css",
               "DocumentMoniker": "C:\\Users\\I-Life\\OneDrive\\Documents\\GitHub\\FolkMetalPerver\\FolkMetalPerver\\FolkMetalPerverBlogWebApp\\FolkMetalPerverBlogWebApp\\CSS\\Tasarim.css",
               "RelativeDocumentMoniker": "FolkMetalPerverBlogWebApp\\CSS\\Tasarim.css",
@@ -248,7 +250,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MasterPage.Master",
               "DocumentMoniker": "C:\\Users\\I-Life\\OneDrive\\Documents\\GitHub\\FolkMetalPerver\\FolkMetalPerver\\FolkMetalPerverBlogWebApp\\FolkMetalPerverBlogWebApp\\MasterPage.Master",
               "RelativeDocumentMoniker": "FolkMetalPerverBlogWebApp\\MasterPage.Master",
@@ -298,7 +300,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Giris.aspx",
               "DocumentMoniker": "C:\\Users\\I-Life\\OneDrive\\Documents\\GitHub\\FolkMetalPerver\\FolkMetalPerver\\FolkMetalPerverBlogWebApp\\FolkMetalPerverBlogWebApp\\YoneticiPanel\\Giris.aspx",
               "RelativeDocumentMoniker": "FolkMetalPerverBlogWebApp\\YoneticiPanel\\Giris.aspx",
@@ -311,7 +313,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "VeriModel.cs",
               "DocumentMoniker": "C:\\Users\\I-Life\\OneDrive\\Documents\\GitHub\\FolkMetalPerver\\FolkMetalPerver\\FolkMetalPerverBlogWebApp\\VeriErisimKatmani\\VeriModel.cs",
               "RelativeDocumentMoniker": "VeriErisimKatmani\\VeriModel.cs",
@@ -408,7 +410,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "MakaleEkle.aspx",
               "DocumentMoniker": "C:\\Users\\I-Life\\OneDrive\\Documents\\GitHub\\FolkMetalPerver\\FolkMetalPerver\\FolkMetalPerverBlogWebApp\\FolkMetalPerverBlogWebApp\\YoneticiPanel\\MakaleEkle.aspx",
               "RelativeDocumentMoniker": "FolkMetalPerverBlogWebApp\\YoneticiPanel\\MakaleEkle.aspx",
@@ -432,7 +434,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "KategoriDuzenle.aspx",
               "DocumentMoniker": "C:\\Users\\I-Life\\OneDrive\\Documents\\GitHub\\FolkMetalPerver\\FolkMetalPerver\\FolkMetalPerverBlogWebApp\\FolkMetalPerverBlogWebApp\\YoneticiPanel\\KategoriDuzenle.aspx",
               "RelativeDocumentMoniker": "FolkMetalPerverBlogWebApp\\YoneticiPanel\\KategoriDuzenle.aspx",
