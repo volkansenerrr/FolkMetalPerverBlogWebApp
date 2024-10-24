@@ -1,4 +1,5 @@
-﻿.sayfaBaslik {
+﻿/* Sayfa başlığı */
+.sayfaBaslik {
     padding: 5px;
     margin-bottom: 5px;
     border-bottom: 1px solid silver;
@@ -6,17 +7,19 @@
     margin-left: 10px;
 }
 
+/* Tablo taşıyıcı stil */
 .tabloTasiyici {
-    margin: 15px auto; /* Üst ve alt boşluklar ekleyin */
+    margin: 15px auto; /* Üst ve alt boşluklar */
     width: 100%;
-    max-width: 1289px; /* Maksimum genişlik belirleyin */
-    display: block; /* Flex kullanmak istemiyorsanız bu şekilde ayarlayın */
+    max-width: 1289px; /* Maksimum genişlik */
+    display: block;
     margin-left: 10px;
 }
 
+/* Tablo ayarları */
 .tablo {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: collapse; /* Sınırları birleştir */
 }
 
     .tablo tr th {
@@ -28,26 +31,46 @@
 
     .tablo tr td {
         border: 1px solid silver;
-        padding: 15px; /* Yeterli boşluk eklemek için arttırdık */
-        text-align: center; /* Butonları ortala */
-        vertical-align: middle; /* İçerikleri ortala */
+        padding: 15px; /* Yeterli boşluk */
+        text-align: center; /* İçeriği ortala */
+        vertical-align: middle; /* İçeriği dikeyde ortala */
     }
 
-/* Butonları ortalamak için */
-.tablobutton {
-    display: inline-flex; /* Butonların ortalanmasını sağlamak için inline-flex kullanıyoruz */
-    align-items: center; /* Dikey ortalama */
-    justify-content: center; /* Yatay ortalama */
-    padding: 0; /* Buton içindeki boşluk */
-    font-size: 9pt; /* Font boyutu */
-    border-radius: 3px; /* Kenar yuvarlama */
-    text-decoration: none; /* Alt çizgi olmaması için */
-    margin: 5px 0; /* Butonlar arasında yukarı ve aşağıda 5px boşluk ekle */
-    width: 51px; /* Buton genişliğini ayarlayın */
-    height: 30px; /* Buton yüksekliğini ayarlayın */
-    color: white; /* Yazı rengi */
-    line-height: 30px; /* İkon ve metni dikey olarak ortalamak için */
+/* Butonların bulunduğu hücreler için flex düzeni */
+.buton-container {
+    display: flex; /* Butonları yan yana getir */
+    justify-content: center; /* Yatayda ortala */
+    align-items: center; /* Dikeyde ortala */
 }
+
+/* Butonlar için genel stil */
+.tablobutton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    font-size: 9pt;
+    border-radius: 3px;
+    text-decoration: none;
+    margin: 5px 2px; /* Yukarı-aşağıda 5px, yanlarda 2px boşluk */
+    width: auto; /* Otomatik genişlik */
+    height: 30px;
+    color: white; /* Yazı rengi */
+    cursor: pointer; /* Tıklanabilir imleç */
+}
+
+    /* Buton içindeki yazı */
+    .tablobutton span {
+        display: inline-block; /* Metni hizala */
+        vertical-align: middle; /* Dikey ortala */
+    }
+
+    /* Buton içindeki ikon */
+    .tablobutton img {
+        width: 21px;
+        height: 21px;
+        margin-right: 5px; /* İkon ve metin arasındaki boşluk */
+    }
 
 /* Renkli butonlar */
 .duzenle {
@@ -62,20 +85,12 @@
     background-color: #ff0000; /* Kırmızı arka plan */
 }
 
-/* Butonların üzerine gelindiğinde görünümünü değiştir */
+/* Buton üzerine gelindiğinde görsel etki */
 .tablobutton:hover {
-    opacity: 0.8; /* Transparanlık ile etki */
+    opacity: 0.8; /* Hover efektiyle transparanlık */
 }
 
-/* İkon ayarları */
-.tablobutton img {
-    width: 21px; /* İkonun genişliği */
-    height: 21px; /* İkon yüksekliği aynı yapıldı */
-    margin: 0; /* İkon ile metin arasında boşluk kaldırıldı */
-    vertical-align: middle; /* İkonu dikey olarak ortala */
-}
-
-/* İkonların tam ortalanmasını sağlamak için */
-.tablobutton {
-    line-height: 30px; /* Buton yüksekliğiyle aynı yaparak, içindeki metin ve ikonun ortalanmasını sağla */
+/* Kırmızı buton hover */
+.tablobutton.sil:hover {
+    background-color: #cc0000; /* Kırmızı buton hover'da koyulaşır */
 }

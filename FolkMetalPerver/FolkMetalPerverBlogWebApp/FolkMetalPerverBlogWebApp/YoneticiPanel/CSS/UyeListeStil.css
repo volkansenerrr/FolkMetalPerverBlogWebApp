@@ -1,0 +1,62 @@
+﻿/* Sayfa başlığı */
+.sayfaBaslik {
+    padding: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid silver;
+    text-align: left;
+    margin-left: 10px;
+}
+
+/* Tablo taşıyıcı stil */
+.tabloTasiyici {
+    margin: 15px auto;
+    width: 100%;
+    max-width: 1289px;
+}
+
+/* Tablo ayarları */
+.tablo {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .tablo th, .tablo td {
+        border: 1px solid silver;
+        padding: 10px;
+        text-align: center;
+    }
+
+        /* Buton hücresine özel stil */
+        .tablo td:last-child {
+            width: 180px; /* Butonlar için yeterli genişlik bırak */
+            vertical-align: middle;
+        }
+
+/* Butonlar için genel stil */
+.butonlar {
+    display: flex; /* Flexbox kullanarak butonları hizala */
+    justify-content: center; /* Yatayda ortala */
+    gap: 10px; /* Butonlar arasında boşluk */
+}
+
+/* Renkli butonlar */
+.tablobutton {
+    display: flex; /* Flex kullanarak ikon ve metni hizala */
+    align-items: center; /* Dikeyde ortala */
+    justify-content: center; /* Yatayda ortala */
+    padding: 5px 10px;
+    font-size: 9pt;
+    border-radius: 3px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer; /* Tıklanabilir */
+}
+
+.sil {
+    background-color: #ff0000; /* Sil butonu için kırmızı arka plan */
+}
+
+/* Buton üzerine gelindiğinde görsel etki */
+.tablobutton:hover {
+    opacity: 0.8; /* Hover efektiyle transparanlık */
+}

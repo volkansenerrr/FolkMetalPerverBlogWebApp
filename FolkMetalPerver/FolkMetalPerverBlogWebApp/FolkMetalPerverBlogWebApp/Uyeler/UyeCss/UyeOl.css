@@ -1,0 +1,156 @@
+﻿body {
+    font-family: Calibri, sans-serif;
+    color: #303030;
+    background-color: #0e0d0d;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Tüm içeriği yatayda ortalar */
+    align-items: center; /* Tüm içeriği dikeyde ortalar */
+}
+
+.tasiyici {
+    width: 500px;
+    min-height: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    .tasiyici::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url('../resimler/login_background2 - kopya.jpg');
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+    }
+
+.baslik {
+    text-align: center;
+    color: white;
+    margin: 10px 0;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.sol {
+    color: white;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.satir {
+    padding: 1px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Öğeleri tam ortalar */
+}
+
+.IsimLabel, .SoyadLabel, .KullaniciAdiLabel, .MailLabel, .SifreLabel {
+    margin-bottom: 5px;
+    color: white;
+    width: 70%; /* Label'lar daha dar olacak */
+    text-align: left; /* Label'lar sola hizalı kalacak */
+}
+
+.metinKutu {
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #d5d5d5;
+    outline: none;
+    background-color: rgba(239, 239, 239, 0.9);
+    width: 70%; /* Metin kutuları daha dar */
+    box-sizing: border-box;
+    margin: 2px 0;
+    padding-left: 10px;
+}
+
+.uyeOlButon {
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: #467d42;
+    color: white;
+    cursor: pointer;
+    width: 30%; /* Buton genişliği küçüldü */
+    font-size: 16px;
+    transition: background-color 0.3s;
+    position: relative;
+    z-index: 1;
+    margin: 10px auto;
+}
+
+    .uyeOlButon:hover {
+        background-color: #5cb85c;
+    }
+
+#pnl_mesaj {
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panelBasarisiz {
+    background-color: #d9534f;
+    color: white;
+    padding: 10px;
+    border: 1px solid #d9534f;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 80%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.success-message, .error-message {
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.success-message {
+    color: #4CAF50;
+    background-color: #dff0d8;
+    border: 1px solid #4CAF50;
+}
+
+.error-message {
+    color: #F44336;
+    background-color: #f2dede;
+    border: 1px solid #F44336;
+}
+
+.message-panel {
+    position: relative;
+    margin-top: 10px;
+}

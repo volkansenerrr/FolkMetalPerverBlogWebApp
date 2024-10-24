@@ -19,8 +19,8 @@
                 </h2>
             </div>
             <div class="uyePanel">
-                <a href="#">Üye Giriş</a>
-                <a href="#">Üye Ol</a>
+                <a href="Uyeler/UyeGiris.aspx">Üye Giriş</a>
+                <a href="Uyeler/UyeOl.aspx">Üye Ol</a>
             </div>
             <div style="clear: both"></div>
         </div>

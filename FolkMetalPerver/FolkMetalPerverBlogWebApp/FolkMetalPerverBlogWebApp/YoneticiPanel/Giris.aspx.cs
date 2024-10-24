@@ -50,7 +50,7 @@ namespace FolkMetalPerverBlogWebApp.YoneticiPanel
 
         protected void btn_UyeGirisYap_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("~/Uyeler/UyeGiris.aspx");
         }
     }
 }

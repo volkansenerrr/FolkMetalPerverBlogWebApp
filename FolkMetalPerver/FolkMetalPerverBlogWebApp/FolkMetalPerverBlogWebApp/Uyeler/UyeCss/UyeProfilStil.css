@@ -1,0 +1,99 @@
+﻿*,
+h1, h2, h3, h4, h5, h6, ul, li, ol {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+}
+
+.ustcubuk {
+    background-color: black;
+    min-height: 50px; /* Daha iyi bir görünüm için yükseklik artırıldı */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Sol ve sağ arasında boşluk bırak */
+    padding: 0 20px;
+}
+
+.anaBaslik {
+    display: flex;
+    align-items: center;
+}
+
+    .anaBaslik .logo {
+        max-width: 140px;
+        height: auto;
+    }
+
+.kullaniciAlani {
+    display: flex;
+    align-items: center; /* Dikey ortalama */
+}
+
+.kullaniciBilgisi {
+    display: flex;
+    align-items: center; /* Dikey olarak ortala */
+    margin-right: 10px; /* Çıkış butonu ile araya boşluk bırak */
+}
+
+.kullanicieleman {
+    padding: 5px 0; /* Yukarı-aşağı boşluk */
+    color: white; /* Yazı rengi */
+    text-decoration: none; /* Alt çizgi kaldırma */
+}
+
+    .kullanicieleman:hover {
+        text-decoration: underline;
+    }
+
+.cikisLink {
+    display: flex; /* Simge ve metni yan yana getir */
+    align-items: center; /* Dikey olarak ortala */
+    background-color: black; /* Butonun arka plan rengi */
+    color: white; /* Yazı rengi */
+    border: none; /* Kenar çizgisi yok */
+    border-radius: 5px; /* Kenarları yuvarlat */
+    margin-left: 50px; /* Kullanıcı bilgisi ile araya boşluk bırak */
+}
+
+    .cikisLink img {
+        width: 42px; /* Çıkış simgesinin boyutu */
+        height: 42px; /* Çıkış simgesinin boyutu */
+    }
+
+    .cikisLink:hover {
+        background-color: #5a5a5a; /* Üzerine gelindiğinde arka plan rengi */
+    }
+
+.anaMenu {
+    width: 180px; /* Ana menü genişliği */
+    padding: 20px 0; /* Yukarı-aşağı boşluk */
+    background-color: #e4e4e4; /* Arka plan rengi */
+    min-height: 100vh; /* Menünün tam yüksekliğini ayarlayın */
+    float: left; /* Sol tarafa yasla */
+}
+
+    .anaMenu .cizgi {
+        border-bottom: 1px solid white; /* Alt çizgi */
+    }
+
+    .anaMenu a {
+        text-decoration: none; /* Alt çizgi kaldırma */
+        display: block; /* Blok düzeni */
+        color: #1d1d1d; /* Yazı rengi */
+        padding: 5px 15px; /* Boşluk */
+    }
+
+        .anaMenu a:hover {
+            color: white; /* Üzerine gelindiğinde yazı rengi */
+            background-color: #424242; /* Üzerine gelindiğinde arka plan rengi */
+        }
+
+.anaIcerik {
+    flex: 1; /* Esnek alan kaplama */
+    padding: 20px; /* İçerik alanı için boşluk */
+    margin-left: 180px; /* Menü genişliği kadar boşluk bırak */
+}

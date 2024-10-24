@@ -25,7 +25,7 @@
 <body>
     <form id="form1" runat="server">
         <div class="tasiyici">
-            <h3 class="baslik">Şifre Sıfırlama</h3>
+            <h3 class="baslik">Yönetici Şifre Sıfırlama</h3>
             <div class="sol">
                 <!-- Mail Girişi -->
                 <div class="satir">

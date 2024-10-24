@@ -612,10 +612,286 @@ namespace VeriErisimKatmani
                 baglanti.Close();
             }
         }
+        #endregion
+
+        #region Üye Metotları
+
+        public bool UyeEkle(Uye uye)
+        {
+            try
+            {
+                komut.CommandText = "INSERT INTO Uyeler(Isim,Soyisim,KullaniciAdi,Mail,Sifre,Durum,Silinmis) VALUES(@isim,@soyisim,@kullaniciadi,@mail,@sifre,@durum,@silinmis)";
+                komut.Parameters.Clear();
+                komut.Parameters.AddWithValue("@isim", uye.Isim);
+                komut.Parameters.AddWithValue("@soyisim", uye.Soyisim);
+                komut.Parameters.AddWithValue("@kullaniciadi", uye.KullaniciAdi);
+                komut.Parameters.AddWithValue("@mail", uye.Mail);
+                komut.Parameters.AddWithValue("@sifre", uye.Sifre);
+                komut.Parameters.AddWithValue("@durum", uye.Durum);
+                komut.Parameters.AddWithValue("@silinmis", uye.Silinmis);
+                baglanti.Open();
+                komut.ExecuteNonQuery();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                baglanti.Close();
+            }
+        }
+
+        public Uye UyeGiris(string mail, string sifre)
+        {
+            SqlCommand komut = baglanti.CreateCommand();
+            try
+            {
+                // Kullanıcıyı sorgularken parametreleri yeniden ekleyelim
+                komut.CommandText = "SELECT ID, Isim, Soyisim, KullaniciAdi, Mail, Sifre, Durum, Silinmis FROM Uyeler WHERE Mail = @mail AND Sifre = @sifre";
+                komut.Parameters.Clear();
+                komut.Parameters.AddWithValue("@mail", mail.ToLower()); // E-posta küçük harfe çevrildi
+                komut.Parameters.AddWithValue("@sifre", sifre); // Şifreyi hashlemiyorsan bu düz şekilde tutulacak
+
+                baglanti.Open();
+                SqlDataReader okuyucu = komut.ExecuteReader();
+
+                if (okuyucu.Read()) // Eğer kullanıcı bulunduysa
+                {
+                    Uye u = new Uye
+                    {
+                        ID = okuyucu.GetInt32(0),
+                        Isim = okuyucu.GetString(1),
+                        Soyisim = okuyucu.GetString(2),
+                        KullaniciAdi = okuyucu.GetString(3),
+                        Mail = okuyucu.GetString(4),
+                        Sifre = okuyucu.GetString(5),
+                        Durum = okuyucu.GetBoolean(6),
+                        Silinmis = okuyucu.GetBoolean(7)
+                    };
+
+                    return u; // Kullanıcı bulundu, geri dön
+                }
+                else
+                {
+                    return null; // Kullanıcı bulunamadı
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Hata: " + ex.Message);
+                return null;
+            }
+            finally
+            {
+                baglanti.Close();
+            }
+        }
+
+
+        public Uye UyeEmailveSifreGetir(string email, string sifre)
+        {
+            SqlCommand komut = new SqlCommand("SELECT * FROM Uyeler WHERE Mail = @mail AND Sifre = @sifre", baglanti);
+            komut.Parameters.AddWithValue("@mail", email);
+            komut.Parameters.AddWithValue("@sifre", sifre);
+
+            try
+            {
+                baglanti.Open();
+                SqlDataReader okuyucu = komut.ExecuteReader();
+
+                if (okuyucu.Read())
+                {
+                    return new Uye
+                    {
+                        ID = (int)okuyucu["ID"],
+                        Isim = (string)okuyucu["Isim"],
+                        Soyisim = (string)okuyucu["Soyisim"],
+                        KullaniciAdi = (string)okuyucu["KullaniciAdi"],
+                        Mail = (string)okuyucu["Mail"],
+                        Sifre = (string)okuyucu["Sifre"],
+                        Durum = (bool)okuyucu["Durum"],
+                        Silinmis = (bool)okuyucu["Silinmis"]
+                    };
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Hata: " + ex.Message);
+            }
+            finally
+            {
+                baglanti.Close();
+            }
+            return null; // Kullanıcı bulunamazsa null döndür
+        }
+
+        public bool UyeSifreGuncelle(string email, string yeniSifre)
+        {
+            SqlCommand komut = new SqlCommand("UPDATE Uyeler SET Sifre = @yeniSifre WHERE Mail = @mail", baglanti);
+
+            // E-posta adresini küçük harfe çevir
+            komut.Parameters.AddWithValue("@mail", email.ToLower());
+            komut.Parameters.AddWithValue("@yeniSifre", yeniSifre);
+
+            try
+            {
+                baglanti.Open();
+                int sonuc = komut.ExecuteNonQuery();
+                return sonuc > 0; // Güncelleme başarılıysa true döndür
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Hata: " + ex.Message);
+                return false;
+            }
+            finally
+            {
+                baglanti.Close();
+            }
+        }
+
+        public List<Uye> UyeListele()
+        {
+            List<Uye> uyeler = new List<Uye>();
+            try
+            {
+                komut.CommandText = "SELECT ID, Isim, Soyisim, KullaniciAdi, Mail, Sifre, Durum, Silinmis FROM Uyeler";
+                komut.Parameters.Clear();
+
+                baglanti.Open();
+                SqlDataReader okuyucu = komut.ExecuteReader();
+
+                while (okuyucu.Read())
+                {
+                    Uye u = new Uye
+                    {
+                        ID = okuyucu.GetInt32(0),
+                        Isim = okuyucu.GetString(1),
+                        Soyisim = okuyucu.GetString(2),
+                        KullaniciAdi = okuyucu.GetString(3),
+                        Mail = okuyucu.GetString(4),
+                        Sifre = okuyucu.GetString(5),
+                        Durum = okuyucu.GetBoolean(6),
+                        Silinmis = okuyucu.GetBoolean(7)
+                    };
+                    uyeler.Add(u);
+                }
+            }
+            catch (Exception ex)
+            {
+                // Hata günlüğü veya loglama yap
+                throw new Exception("Veritabanından üyeleri yüklerken bir hata oluştu.", ex);
+            }
+            finally
+            {
+                if (baglanti.State == ConnectionState.Open)
+                {
+                    baglanti.Close();
+                }
+            }
+
+            return uyeler;
+        }
+
+        public List<Uye> UyeListele(int uyeid)
+        {
+            List<Uye> uyeler = new List<Uye>();
+            try
+            {
+                // Burada doğru sorgu kullanılmış.
+                komut.CommandText = "SELECT ID, Isim, Soyisim, KullaniciAdi, Mail, Sifre, Durum, Silinmis FROM Uyeler WHERE ID = @uyeid";
+                komut.Parameters.Clear();
+                komut.Parameters.AddWithValue("@uyeid", uyeid);
+
+                baglanti.Open();
+                SqlDataReader okuyucu = komut.ExecuteReader();
+
+                while (okuyucu.Read())
+                {
+                    Uye u = new Uye
+                    {
+                        ID = okuyucu.GetInt32(0),
+                        Isim = okuyucu.GetString(1),
+                        Soyisim = okuyucu.GetString(2),
+                        KullaniciAdi = okuyucu.GetString(3),
+                        Mail = okuyucu.GetString(4),
+                        Sifre = okuyucu.GetString(5),
+                        Durum = okuyucu.GetBoolean(6),
+                        Silinmis = okuyucu.GetBoolean(7)
+                    };
+                    uyeler.Add(u);
+                }
+
+                return uyeler;
+            }
+            catch (Exception ex) // Hata durumunda hata mesajını göster
+            {
+                // Hata mesajını güncelledim
+                Console.WriteLine($"Hata oluştu: {ex.Message}");
+                return null;
+            }
+            finally
+            {
+                if (baglanti.State == ConnectionState.Open)
+                {
+                    baglanti.Close();
+                }
+            }
+        }
+
+        public void UyeSil(int id)
+        {
+            try
+            {
+                komut.CommandText = "UPDATE Uyeler SET Silinmis = 1 WHERE ID=@id";
+                komut.Parameters.Clear();
+                komut.Parameters.AddWithValue("@id", id);
+                baglanti.Open();
+                int rowsAffected = komut.ExecuteNonQuery();
+                if (rowsAffected == 0)
+                {
+                    throw new Exception("Silme işlemi sırasında bir sorun oluştu, ID bulunamadı.");
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Silme işlemi başarısız: " + ex.Message);
+            }
+            finally
+            {
+                baglanti.Close();
+            }
+        }
+
+
+        // Eğer hard delete istiyorsan
+        public void UyeSilHardDelete(int id)
+        {
+            try
+            {
+                // Hard delete: Üyeyi veritabanından tamamen sil
+                komut.CommandText = "DELETE FROM Uyeler WHERE ID=@id";
+                komut.Parameters.Clear();
+                komut.Parameters.AddWithValue("@id", id);
+                baglanti.Open();
+                komut.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                // Hata durumunda, burada uygun bir hata mesajı dönebilirsiniz
+                throw new Exception("Silme işlemi başarısız: " + ex.Message);
+            }
+            finally
+            {
+                baglanti.Close();
+            }
+        }
+
+        #endregion
+
     }
 }
 
-    
-
-    #endregion
 

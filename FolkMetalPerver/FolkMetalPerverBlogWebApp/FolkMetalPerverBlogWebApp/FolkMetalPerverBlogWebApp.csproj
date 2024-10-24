@@ -77,6 +77,20 @@
     <Content Include="Reklamlar\160x600.gif" />
     <Content Include="Resimler\Folk_Metalperver.jpg" />
     <Content Include="Resimler\MakaleResimleri\none.png" />
+    <Content Include="Uyeler\Resimler\Button_Background - Kopya.jpg" />
+    <Content Include="Uyeler\Resimler\Button_Background2 - Kopya.jpg" />
+    <Content Include="Uyeler\Resimler\exit.png" />
+    <Content Include="Uyeler\Resimler\Login_Background - Kopya.jpg" />
+    <Content Include="Uyeler\Resimler\Login_Background2 - Kopya.jpg" />
+    <Content Include="Uyeler\Resimler\Ust_Cubuk_Logo.jpg" />
+    <Content Include="Uyeler\UyeCss\UyeGirisStil.css" />
+    <Content Include="Uyeler\UyeCss\UyeOl.css" />
+    <Content Include="Uyeler\UyeCss\UyeProfilStil.css" />
+    <Content Include="Uyeler\UyeCss\UyeResetPassword.css" />
+    <Content Include="Uyeler\UyeDefault.aspx" />
+    <Content Include="Uyeler\UyeGiris.aspx" />
+    <Content Include="Uyeler\UyeOl.aspx" />
+    <Content Include="Uyeler\UyeResetPassword.aspx" />
     <Content Include="Web.config" />
     <Content Include="YoneticiPanel\ckeditor\adapters\jquery.js" />
     <Content Include="YoneticiPanel\ckeditor\build-config.js" />
@@ -394,6 +408,7 @@
     <Content Include="YoneticiPanel\CSS\ListeSayfasi.css" />
     <Content Include="YoneticiPanel\CSS\MakaleDuzenle.css" />
     <Content Include="YoneticiPanel\CSS\MakaleFormSayfasi.css" />
+    <Content Include="YoneticiPanel\CSS\UyeListeStil.css" />
     <Content Include="YoneticiPanel\CSS\YoneticiResetPassword.css" />
     <Content Include="YoneticiPanel\CSS\YoneticiStil.css" />
     <Content Include="YoneticiPanel\Giris.aspx" />
@@ -403,6 +418,7 @@
     <Content Include="YoneticiPanel\MakaleDuzenle.aspx" />
     <Content Include="YoneticiPanel\MakaleEkle.aspx" />
     <Content Include="YoneticiPanel\MakaleListele.aspx" />
+    <Content Include="YoneticiPanel\Uyeler.aspx" />
     <Content Include="YoneticiPanel\YoneticiResetPassword.aspx" />
     <Content Include="YoneticiPanel\Resimler\Button_Background.jpg" />
     <Content Include="YoneticiPanel\Resimler\Button_Background2.jpg" />
@@ -439,6 +455,41 @@
       <DependentUpon>MasterPage.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Uyeler\UyeDefault.aspx.cs">
+      <DependentUpon>UyeDefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Uyeler\UyeDefault.aspx.designer.cs">
+      <DependentUpon>UyeDefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Uyeler\UyeGiris.aspx.cs">
+      <DependentUpon>UyeGiris.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Uyeler\UyeGiris.aspx.designer.cs">
+      <DependentUpon>UyeGiris.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Uyeler\UyeMaster.Master.cs">
+      <DependentUpon>UyeMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Uyeler\UyeMaster.Master.designer.cs">
+      <DependentUpon>UyeMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Uyeler\UyeOl.aspx.cs">
+      <DependentUpon>UyeOl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Uyeler\UyeOl.aspx.designer.cs">
+      <DependentUpon>UyeOl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Uyeler\UyeResetPassword.aspx.cs">
+      <DependentUpon>UyeResetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Uyeler\UyeResetPassword.aspx.designer.cs">
+      <DependentUpon>UyeResetPassword.aspx</DependentUpon>
+    </Compile>
     <Compile Include="YoneticiPanel\Giris.aspx.cs">
       <DependentUpon>Giris.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -488,6 +539,13 @@
     <Compile Include="YoneticiPanel\MakaleListele.aspx.designer.cs">
       <DependentUpon>MakaleListele.aspx</DependentUpon>
     </Compile>
+    <Compile Include="YoneticiPanel\Uyeler.aspx.cs">
+      <DependentUpon>Uyeler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YoneticiPanel\Uyeler.aspx.designer.cs">
+      <DependentUpon>Uyeler.aspx</DependentUpon>
+    </Compile>
     <Compile Include="YoneticiPanel\YoneticiResetPassword.aspx.cs">
       <DependentUpon>YoneticiResetPassword.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -513,6 +571,7 @@
   <ItemGroup>
     <Content Include="MasterPage.Master" />
     <None Include="packages.config" />
+    <Content Include="Uyeler\UyeMaster.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

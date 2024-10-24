@@ -40,7 +40,7 @@
                 <a href="MakaleEkle.aspx">Makale Ekle</a>
                 <a href="MakaleListele.aspx">Makale Listele</a>
                 <div class="cizgi"></div>
-                <a href="YoneticiDefault.aspx">Üyeler</a>
+                <a href="Uyeler.aspx">Üyeler</a>
                 <a href="YoneticiDefault.aspx">Yorumlar</a>
                 <div class="cizgi"></div>
                 <a href="YoneticiDefault.aspxs">Yazar/Yönetici</a>
